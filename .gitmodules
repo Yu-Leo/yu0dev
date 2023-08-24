@@ -1,0 +1,3 @@
+[submodule "themes/hugo-theme-yuminos"]
+	path = themes/hugo-theme-yuminos
+	url = git@github.com:Yu-Leo/hugo-theme-yuminos.git
