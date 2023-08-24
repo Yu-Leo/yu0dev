@@ -1,3 +1,74 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'ru-ru'
+theme = 'hugo-theme-yuminos'
+
+paginate = 50
+DefaultContentLanguage = "ru"
+enableInlineShortcodes = true
+
+ignoreErrors = ["error-remote-getjson"]
+
+title = "YU0DEV"
+
+enableEmoji = true
+
+[params]
+  color = 'light'
+  monoDarkIcon = true
+  katex = true
+  relatedMax = 5
+  [params.runTime]
+    enabled = true
+    startTime = "2023-08-24T17:00:00"
+    
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+  [[related.indices]]
+    name = 'keywords'
+    weight = 30
+  [[related.indices]]
+    name = 'tags'
+    weight = 50
+  [[related.indices]]
+    name = 'categories'
+    weight = 50
+  [[related.indices]]
+    name = 'date'
+    weight = 40
+    
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = 'gruvbox'
+    tabWidth = 4
+    
+[menu]
+  [[menu.main]]
+    identifier = "github"
+    name = "github"
+    url = "https://github.com/Yu-Leo"
+    weight = 3
+  [[menu.main]]
+    identifier = "tg"
+    name = "telegram"
+    url = "https://t.me/YU0DEV"
+    weight = 4
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    url = "/about/"
+    weight = 1
+    
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[privacy]
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+ 
