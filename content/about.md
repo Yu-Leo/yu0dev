@@ -61,13 +61,14 @@ slug: "about"
 
 ## Мои ресурсы
 
+- Сайт: [yu-leo.github.io/yu0dev](https://yu-leo.github.io/yu0dev/)
 - Habr: [@Yu-Leo](https://habr.com/ru/users/Yu-Leo/)
 - Telegram-канал: [@YU0DEV](https://t.me/YU0DEV)
+- GitHub: [@Yu-Leo](https://github.com/Yu-Leo)
 
 ## Контакты
 
 - Telegram: [@yu_leo](https://t.me/yu_leo)
-- GitHub: [@Yu-Leo](https://github.com/Yu-Leo)
 - E-mail: levayu22@gmail.com
 
 ### gpg
