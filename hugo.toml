@@ -20,7 +20,9 @@ enableEmoji = true
   [params.runTime]
     enabled = true
     startTime = "2023-08-24T20:00:00"
-    
+  [params.social]
+    telegram = "https://t.me/YU0DEV"
+
 [related]
   includeNewer = true
   threshold = 80
