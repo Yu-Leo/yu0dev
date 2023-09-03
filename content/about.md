@@ -23,6 +23,7 @@ slug: "about"
 - Docker
 - Linux
 - GitLab CI/CD
+- GitHub Actions
 
 ## Опыт работы
 
@@ -40,7 +41,7 @@ slug: "about"
 
 *Используемые технологии*: Go, GraphQL, MySQL, Docker, Python.
 
-### • Образовательная студ. организация "[БАШНЯ](https://t.me/bashnya_education)" (март - май 2023 г.)
+### • Образовательный проект "[БАШНЯ](https://t.me/bashnya_education)" (март 2023 г. - н. в.)
 
 ###### Ментор курса "Backend на Go"
 
@@ -61,7 +62,7 @@ slug: "about"
 
 ## Мои ресурсы
 
-- Сайт: [yu-leo.github.io/yu0dev](https://yu-leo.github.io/yu0dev/)
+- Блог: [yu-leo.github.io/yu0dev](https://yu-leo.github.io/yu0dev/)
 - Habr: [@Yu-Leo](https://habr.com/ru/users/Yu-Leo/)
 - Telegram-канал: [@YU0DEV](https://t.me/YU0DEV)
 - GitHub: [@Yu-Leo](https://github.com/Yu-Leo)
