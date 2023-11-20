@@ -21,8 +21,8 @@ tags:
 type Car struct {
 	brand           string
 	convertible     bool
-	engineСapacity  float64
-	fuelСonsumption float64
+	engineCapacity  float64
+	fuelConsumption float64
 	owners          []string
 }
 ```
@@ -34,7 +34,7 @@ car := &Car{"Lada", false, 1.4, 7.4, []string{}}
 ```
 
 Основным минусом такого способа является зависимость порядка значений от порядка объявления полей в структуре. Следствия:
-1) При каждом создании нового экземпляра необходимо думать о том, в каком порядке были объявлены поля. Крайне высока вероятность ошибиться. Например, передать сначала значение поля `fuelСonsumption`, а затем `engineСapacity`, а не наоборот, как требуется.
+1) При каждом создании нового экземпляра необходимо думать о том, в каком порядке были объявлены поля. Крайне высока вероятность ошибиться. Например, передать сначала значение поля `fuelConsumption`, а затем `engineCapacity`, а не наоборот, как требуется.
 2) Если в начало/середину списка полей в объявлении структуры добавится новое поле, в каждом создании экземпляра необходимо будет менять порядок значений.
 ### Второй вариант
 Конечно, можно создавать экземпляры структуры с указанием названий полей перед значениями. Код будет выглядеть следующим образом:
@@ -42,8 +42,8 @@ car := &Car{"Lada", false, 1.4, 7.4, []string{}}
 car := &Car{
 	brand: "Lada",
 	convertible: false,
-	engineСapacity: 1.4,
-	fuelСonsumption: 7.4,
+	engineCapacity: 1.4,
+	fuelConsumption: 7.4,
 	owners: []string{},
 }
 ```
@@ -61,8 +61,8 @@ func NewCar(brand string, convertible bool,
 	return &Car{
 		brand:           brand,
 		convertible:     convertible,
-		engineСapacity:  engineCapacity,
-		fuelСonsumption: fuelConsumption,
+		engineCapacity:  engineCapacity,
+		fuelConsumption: fuelConsumption,
 		owners:          owners,
 	}
 }
@@ -78,8 +78,8 @@ func NewCar(brand string, convertible bool,
 	return &Car{
 		brand:           brand,
 		convertible:     convertible,
-		engineСapacity:  engineCapacity,
-		fuelСonsumption: fuelConsumption,
+		engineCapacity:  engineCapacity,
+		fuelConsumption: fuelConsumption,
 		owners:          []string{},
 	}
 }
@@ -102,8 +102,8 @@ func NewCar(opts ...CarOption) *Car {
 	c := &Car{
 		brand: "",
 		convertible: false,
-		engineСapacity: 0.0,
-		fuelСonsumption: 0.0,
+		engineCapacity: 0.0,
+		fuelConsumption: 0.0,
 		owners: []string{},
 	}
 	for _, opt := range opts {
@@ -126,15 +126,15 @@ func WithConvertible(convertible string) CarOption {
 	}
 }
 
-func WithEngineСapacity(engineСapacity float64) CarOption {
+func WithEngineCapacity(engineCapacity float64) CarOption {
 	return func(c *Car) {
-		c.engineСapacity = engineСapacity
+		c.engineCapacity = engineCapacity
 	}
 }
 
-func WithFuelСonsumption(fuelСonsumption float64) CarOption {
+func WithFuelConsumption(fuelConsumption float64) CarOption {
 	return func(c *Car) {
-		c.fuelСonsumption = fuelСonsumption
+		c.fuelConsumption = fuelConsumption
 	}
 }
 
@@ -148,8 +148,8 @@ func WithOwners(owners []string) CarOption {
 ```go
 car := NewCar(WithBrand("Lada"),
 			  WithConvertible(true),
-			  WithEngineСapacity(1.4),
-			  WithFuelСonsumption(7.4),
+			  WithEngineCapacity(1.4),
+			  WithFuelConsumption(7.4),
 			  WithOwners([]string{"Василий", "Пётр"}))
 ```
 Помимо этого можно написать функции, задающие полям структуры какие-либо часто используемые, но отличные от дефолтных значения.
@@ -166,8 +166,8 @@ func Convertible() CarOption {
 ```go
 car := NewCar(WithBrand("Lada"),
 			  Convertible(),
-			  WithEngineСapacity(1.4),
-			  WithFuelСonsumption(7.4),
+			  WithEngineCapacity(1.4),
+			  WithFuelConsumption(7.4),
 			  WithOwners([]string{"Василий", "Пётр"}))
 ```
 #### Объяснение
