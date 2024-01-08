@@ -17,11 +17,10 @@ enableEmoji = true
   monoDarkIcon = true
   katex = true
   relatedMax = 5
+  thinkpadKbd = true
   [params.runTime]
     enabled = true
     startTime = "2023-08-24T20:00:00"
-  [params.social]
-    telegram = "https://t.me/YU0DEV"
 
 [related]
   includeNewer = true
@@ -53,24 +52,32 @@ enableEmoji = true
     identifier = "github"
     name = "github"
     url = "https://github.com/Yu-Leo"
-    weight = 3
+    weight = 20
   [[menu.main]]
     identifier = "tg"
     name = "telegram"
     url = "https://t.me/YU0DEV"
-    weight = 4
+    weight = 30
   [[menu.main]]
     identifier = "about"
     name = "about"
     url = "/about/"
-    weight = 1
+    weight = 10
+  [[menu.main]]
+    identifier = "books"
+    name = "books"
+    url = "/books/"
+    weight = 5
     
 [taxonomies]
   category = "categories"
   tag = "tags"
 
+[permalinks]
+  categories = "/:slug/"
+
 [privacy]
   [privacy.youtube]
     disabled = false
     privacyEnhanced = true
- 
+
