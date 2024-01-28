@@ -2,8 +2,9 @@
 title: Паттерн "Functional Options" в Go
 slug: go-functional-options
 date: 2023-11-20
-tags:
-  - go
+tags: ["go", ]
+description: "Паттерн Functional Options в Go: как и зачем его использовать"
+keywords: ["Go", "golang", "паттерны", "Functional Options", "Функциональные параметры"]
 ---
 Паттерн **"Functional Options"** ("Функциональные параметры") в Go - что это такое и ~~с чем его едят~~ как его применять? Давайте разбираться!
 

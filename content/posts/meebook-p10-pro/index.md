@@ -2,9 +2,9 @@
 title: "Обзор электронной книги Meebook P10 Pro"
 slug: "meebook-p10-pro"
 date: 2023-08-28
-tags: [
-    "hadrware",
-]
+tags: ["hardware", ]
+description: "Обзор электронной книги Meebook P10 Pro"
+keywords: ["обзор", "книга", "электронная книга", "Meebook P10 Pro"]
 ---
 
 ![main.jpg](./main.jpg)

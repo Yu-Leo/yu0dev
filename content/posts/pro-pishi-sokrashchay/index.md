@@ -2,10 +2,9 @@
 title: 'Обзор "Пиши, сокращай: Как создавать сильный текст"'
 slug: pro-pishi-sokrashchay
 date: 2024-01-08
-tags:
-  - text
-categories:
-  - books
+tags: ["books", "text"]
+description: 'Обзор книги "Пиши, сокращай: Как создавать сильный текст"'
+keywords: ["обзор", "книга", "пиши сокращай", "тексты"]
 ---
 
 <hr>
