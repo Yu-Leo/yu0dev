@@ -17,28 +17,27 @@ keywords: ["linux", "docker", "postgresql", "pgadmin", "psql"]
 Мы будем поднимать два контейнера: один с [PostgreSQL](https://hub.docker.com/_/postgres), другой — с [pgAdmin](https://hub.docker.com/r/dpage/pgadmin4/). Объединим их при помощи [docker compose](https://docs.docker.com/compose/). Создайте следующий файл в рабочей директории:
 
 ```yaml {lineNos=false title="docker-compose.yaml"}
-version: "3"
+version: "3.8"
 
 services:
   postgres:
-    image: postgres:16.2-alpine
-    restart: always
+    image: postgres:16.3-alpine
     environment:
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
     ports:
-      - 5432:5432
+      - "5432:5432"
     volumes:
       - postgres:/var/lib/postgresql/data
 
   pgadmin:
-    image: dpage/pgadmin4:8.3
+    image: dpage/pgadmin4:8.6
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@pgadmin.com
       PGADMIN_DEFAULT_PASSWORD: password
       PGADMIN_LISTEN_PORT: 80
     ports:
-      - 15432:80
+      - "15432:80"
     volumes:
       - pgadmin:/var/lib/pgadmin
     depends_on:
