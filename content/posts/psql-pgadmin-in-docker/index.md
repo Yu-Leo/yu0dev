@@ -2,7 +2,7 @@
 title: PostgreSQL + pgAdmin в Docker на Linux
 slug: psql-pgadmin-in-docker
 date: 2024-02-15
-tags: ["linux", "docker", "postgresql"]
+tags: ["linux", "docker", "postgresql", "note"]
 description: "Как работать с PostgreSQL и pgAdmin в Docker-контейнерах на Linux"
 keywords: ["linux", "docker", "postgresql", "pgadmin", "psql"]
 ---
