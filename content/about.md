@@ -23,6 +23,7 @@ slug: "about"
 - Linux
 - GitLab CI/CD
 - GitHub Actions
+- HTML5, CSS3, JS, TS, React
 
 ## Опыт работы
 
