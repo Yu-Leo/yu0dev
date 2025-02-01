@@ -134,3 +134,31 @@ glc "super feature" # ABC-1234: super_service: super feature
 
 Если в аргументах не передать описание изменений, коммит не будет осуществлён.
 
+## UPDATE 2025-02-01
+
+**Версия для формата сообщения, содержащего только название задачи:**
+
+При невозможности спарсить название задачи из названия ветки коммит не будет осуществлён.
+
+```bash
+function jt() {
+    current_branch | grep -Po "^[[:alpha:]]*-\d*" | tr "[:lower:]" "[:upper:]"
+}
+
+function glc {
+    RED='\033[0;31m'
+    NC='\033[0m' # No Color
+
+    message="$(jt): $1"
+
+    if [[ -z "$1" ]]; then
+        echo "${RED}ERROR: message is empty!${NC}"
+    elif [[ -z "$(jt)" ]]; then
+        echo "${RED}ERROR: task is empty!${NC}"
+    else
+        gc -m "$message"
+    fi
+}
+```
+
+❗ Для работы Perl-совместимых регулярных выражений (`-P`) **на MacOS** нужно использовать утилиту `ggrep` (GNU grep), вместо дефолтного `grep`. Поставить её можно командой `brew install grep` ([stackoverflow](https://stackoverflow.com/questions/16658333/grep-p-no-longer-works-how-can-i-rewrite-my-searches))
