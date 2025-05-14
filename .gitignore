@@ -1,4 +1,4 @@
 .hugo_build.lock
 public/
 .obsidian/
-
+.DS_Store
