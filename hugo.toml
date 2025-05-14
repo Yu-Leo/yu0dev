@@ -2,7 +2,6 @@ baseURL = "http://example.org/"
 languageCode = "ru-ru"
 theme = "hugo-theme-yuminos"
 
-pagination.pagerSize = 50
 DefaultContentLanguage = "ru"
 enableInlineShortcodes = true
 enableRobotsTXT = false
@@ -11,6 +10,9 @@ enableEmoji = true
 ignoreErrors = ["error-remote-getjson"]
 
 title = "YU0DEV"
+
+[pagination]
+  pagerSize = 50
 
 [params]
   customTitle = true
